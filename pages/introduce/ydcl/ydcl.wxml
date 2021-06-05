@@ -1,0 +1,17 @@
+<!--pages/introduce/ydcl/ydcl.wxml-->
+<view style="width:100%;height:1200rpx;">
+<!--滑动的图片-->
+<swiper indicator-color="rgb(255,255,255,0.5)"  indicator-active-color="rgb(255,255,255)" autoplay="true" interval="5000" duration="500" style="height：200rpx">
+  <block wx:for="{{swiperImg}}" wx:key="swiper{{index}}">
+     <swiper-item>
+        <image src="{{item.src}}" class="slide-image"></image>
+     </swiper-item>
+  </block>
+</swiper>
+<view class="nenu">运动长廊</view>
+<view class="enenu">Sports corridor</view>
+<view class="text"><text  class="content">  
+里面有健身房、羽毛球馆，场地面积比较大。
+</text></view>
+</view>
+

@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="item add">
+  <button style="width:150rpx;height:150rpx;" bindtap="goToIntroduction">学校介绍</button>
+  </view>
+
+  <view class="item">
+  <button style="width:150rpx;height:150rpx;" bindtap="goToStroll">逛逛东师</button>
+  </view>
+
+  <view class="item">
+  <button style="width:150rpx;height:150rpx;" >欢迎~</button>
+  </view>
+</view>

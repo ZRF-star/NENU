@@ -1,0 +1,34 @@
+<view style="width:100%;height:1200rpx;">
+<!--滑动的图片-->
+<swiper indicator-dots="true" indicator-color="rgb(255,255,255,0.5)"  indicator-active-color="rgb(255,255,255)" autoplay="true" interval="5000" duration="500" style="height：200rpx">
+  <block wx:for="{{swiperImg}}" wx:key="swiper{{index}}">
+     <swiper-item>
+        <image src="{{item.src}}" class="slide-image"></image>
+     </swiper-item>
+  </block>
+</swiper>
+
+<cover-view class="test">
+<button class="mapTO" style="width:120rpx;height:120rpx;" bindtap="goToScroll">地图导航</button>
+</cover-view>
+
+<view class="hr1"></view>
+
+<view class="nenu">东北师范大学简介</view>
+
+<view class="hr"></view>
+
+<view class="enenu">Northeast Normal University</view>
+
+<view class="hr"></view>
+
+<view class="music"><audio name="东北师范大学" poster="" controls></audio></view>
+
+
+
+<view class="text"><text  class="content">东北师范大学,简称东北师大,是中华人民共和国教育部直属、吉林省人民政府共建的大学,是首批国家"世界一流学科建设高校"、国家"211工程"重点建设大学,入选国"985工程优势学科创新平台"、"111计划"、"国培计划"、国家建设高水平大学公派研究生项目、国务院侨办华文教育基地国家大学生文化素质教育基地、国家级大学生创新创业训练计划,是国家师范生免费教育和卓越教师培养计划试点高校教育部"援疆学科建设计划"高校之一、中国政府奖学金来华留学生接收院校,为社会艺术水平考级机构。
+
+东北师范大学于1946年建校，原名东北大学，是中国共产党在东北地区创建的第一所综合性大学。1950年根据国家教育事业发展的需要，易名东北师范大学。1958年划归吉林省管理，更名为吉林师范大学。1980年重新划归教育部，复名为东北师范大学。
+
+根据2019年4月学校官网显示，东北师范大学有自由校区和净月校区；有全日制在校学生28024人。专任教师1557人;设有23个学院（部）,78个本科专业,38个硕士学位授权一级学科，17个硕士专业学位授权点,22个博士学位授权一级学科，2个博士专业学位授权点,20个博士后科研流动站，5个国家重点学科。</text></view>
+</view>

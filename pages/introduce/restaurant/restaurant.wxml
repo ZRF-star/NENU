@@ -1,0 +1,42 @@
+<!--pages/restaurant/restaurant.wxml-->
+<view style="width:100%;height:1200rpx;">
+<!--滑动的图片-->
+<swiper indicator-color="rgb(255,255,255,0.5)"  indicator-active-color="rgb(255,255,255)" autoplay="true" interval="5000" duration="500" style="height：200rpx">
+  <block wx:for="{{swiperImg}}" wx:key="swiper{{index}}">
+     <swiper-item>
+        <image src="{{item.src}}" class="slide-image"></image>
+     </swiper-item>
+  </block>
+</swiper>
+
+
+
+<view class="hr"></view>
+
+<view class="nenu">一食堂</view>
+
+<view class="hr"></view>
+
+<view class="enenu">Restaurant—1</view>
+
+<view class="hr"></view>
+
+
+
+
+<view class="text"><text  class="content">
+净月一食堂： 
+一食堂装修于2018年，共三层楼。
+烤肉木桶饭、吉品川味排骨饭、刀削面、安徽风味鸡蛋灌饼、杭州小笼包、中韩简餐、粗粮细做、麻辣烫。
+麻婆面、麦多馅饼、过桥米线、脆皮鸡排饭、好享扒饭、山西饼、营养粥、鸡柳卷饼、东师饺子王、重庆鸡公煲。
+价格7-16元左右。开放时间大致为7:00-20:00(每个档口开关时间不定，视具体情况而定) 。
+二楼进门前侧有寿司、基本餐和奶茶水果捞，右侧进去还有麻辣香锅、小火锅，再往左转是普通餐。
+ 早：6:30-8:30；
+ 午：11:00-12:30;
+ 晚：16:30-18:00。
+三楼共分为两个部分，一个是前面大厅的餐厅，一个是后面的清真餐厅。
+大厅的早饭和午饭都为自助餐，种类丰富，价格亲民。供应时间：早6:30-10:00；午11：00-12：30；晚饭可点餐，并承接大小型聚餐和活动。
+从三楼餐厅侧面进去，也可以从清真餐厅大门上楼。供应时间：7:00-20:00。
+
+</text></view>
+</view>

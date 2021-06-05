@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/introduction/introduction",
+    "pages/scroll/scroll",
+    "pages/no/no",
+    "pages/introduce/C/C",
+    "pages/introduce/D/D",
+    "pages/introduce/G/G",
+    "pages/introduce/G1/G1",
+    "pages/introduce/R/R",
+    "pages/introduce/X/X",
+    "pages/introduce/Y/Y",
+    "pages/introduce/art/art",
+    "pages/introduce/environment/environment",
+    "pages/introduce/foreign/foreign",
+    "pages/introduce/information/information",
+    "pages/introduce/library/library",
+    "pages/introduce/media/media",
+    "pages/introduce/music/music",
+    "pages/introduce/newark/newark",
+    "pages/introduce/political/political",
+    "pages/introduce/restaurant/restaurant",
+  "pages/introduce/restaurant1/restaurant1",
+ "pages/introduce/sem/sem",
+ "pages/introduce/xia/xia",
+ "pages/introduce/ydcl/ydcl",
+"pages/introduce/pqg/pqg",
+"pages/introduce/yhm/yhm",
+"pages/introduce/ehm/ehm",
+"pages/introduce/shm/shm",
+"pages/introduce/sihm/sihm",
+"pages/introduce/whm/whm",
+"pages/introduce/atm/atm",
+"pages/introduce/cs/cs",
+"pages/introduce/yws/yws",
+"pages/introduce/xfxp/xfxp",
+"pages/introduce/mingzu/mingzu",
+"pages/introduce/dihua/dihua",
+"pages/introduce/tianhua/tianhua"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#506c9b",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

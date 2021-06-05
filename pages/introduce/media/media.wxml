@@ -1,0 +1,29 @@
+<!--pages/media/media.wxml-->
+<view style="width:100%;height:1200rpx;">
+<!--滑动的图片-->
+<swiper indicator-color="rgb(255,255,255,0.5)"  indicator-active-color="rgb(255,255,255)" autoplay="true" interval="5000" duration="500" style="height：200rpx">
+  <block wx:for="{{swiperImg}}" wx:key="swiper{{index}}">
+     <swiper-item>
+        <image src="{{item.src}}" class="slide-image"></image>
+     </swiper-item>
+  </block>
+</swiper>
+
+
+
+<view class="hr"></view>
+
+<view class="nenu">传媒科学学院（新闻学院）</view>
+
+<view class="hr"></view>
+
+<view class="enenu">School Of Media Science (School Of Journalism)</view>
+
+<view class="hr"></view>
+
+
+
+
+<view class="text"><text  class="content">东北师范大学传媒科学学院（新闻学院）始建于2000年，现设有广播电视编导、播音与主持艺术、新闻传播学类（含新闻学、广告学）、数字媒体技术等5个本科专业（系），有戏剧与影视学、新闻传播学和艺术学理论等3个一级学科硕士点，广播电视、新闻与传播等2个专业学位硕士点；建有1个省级重点优势学科，2个省级品牌特色专业，1个省级人才培养模式创新实验区，1个省人文社科重点研究基地，1个省“重大需求协同创新中心”（培育），建有现代教育技术研究所、视听文化研究中心、纪录片研究所等十余个专业研究机构。现有教职工78人，其中博士生导师4人，教授、副教授42人，高级工程师2人，在校本科生700余人，硕士研究生300余人。
+</text></view>
+</view>

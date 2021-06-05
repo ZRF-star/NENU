@@ -1,0 +1,196 @@
+<view class="page">
+<scroll-view scroll-x="true" class="nav" scroll-with-animation="{{true}}">
+    <block wx:for="{{navData}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+      <view class="nav-item {{currentTab == idx ?'active':''}}"  data-current="{{idx}}" bindtap="switchNav">{{navItem.text}}
+      </view>
+    </block>        
+  </scroll-view>
+
+  <view class="xiaoqu" style="width:150rpx;height:70rpx;">
+  <image class="no" style="width:150rpx;height:70rpx;" src="/images/9.png"></image>
+  </view>
+
+  <!--院系-->
+<view class="items" wx:if="{{currentTab==0}}">
+    <map  
+longitude="{{centerLongitude}}" latitude="{{centerLatitude}}" scale="15"
+markers="{{markers1}}" class="map" show-location style="width:100% height:150rpx" include-points="{{markers1}} " bindmarkertap="markertap"
+>
+</map>
+<cover-image class="coverbutton" mode="aspectFit" src="/images/定位.png" bindtap="getCurrentLocation" >
+</cover-image>
+
+    <view class="list" >
+      <view class="site"><text style="color:#506c9b">共有10个</text></view>
+      <scroll-view   class="list-scroll" scroll-y="true" scroll-into-view="{{toScroll}}">
+        <block wx:for="{{yuanxi}}"  wx:for-item="item1" wx:for-index="index1" wx:key="true">
+        <view class="list-item" data-index1="{{index1}}" bindtap="yuanxiJumpTo"  id="item1{{index1}}">
+          <image  class="item-image" mode="aspectFit" src="{{item1.image}}"></image>
+        <text class="item-text">{{item1.text}}</text>
+        </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+ 
+<!--宿舍-->
+<view class="items" wx:if="{{currentTab==1}}">
+    <map  
+longitude="{{centerLongitude}}" latitude="{{centerLatitude}}" scale="15"
+markers="{{markers2}}" class="map" show-location style="width:100% height:150rpx" include-points="{{markers2}} " bindmarkertap="markertap"
+>
+</map>
+<cover-image class="coverbutton" mode="aspectFit" src="/images/定位.png" bindtap="getCurrentLocation" >
+</cover-image>
+
+    <view class="list" >
+      <view class="site"><text style="color:#506c9b">共有10个</text></view>
+      <scroll-view   class="list-scroll" scroll-y="true" scroll-into-view="{{toScroll}}">
+        <block wx:for="{{sushe}}"  wx:for-item="item2" wx:for-index="index2" wx:key="true">
+        <view class="list-item" data-index2="{{index2}}" bindtap="susheJumpPages"  id="item2{{index2}}">
+          <image  class="item-image" mode="aspectFit" src="{{item2.image}}"></image>
+        <text class="item-text">{{item2.text}}</text>
+        </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+ 
+<!--餐饮-->
+<view class="items" wx:if="{{currentTab==2}}">
+    <map  
+longitude="{{centerLongitude}}" latitude="{{centerLatitude}}" scale="15"
+markers="{{markers3}}" class="map" show-location style="width:100% height:150rpx" include-points="{{markers3}} " bindmarkertap="markertap"
+>
+</map>
+<cover-image class="coverbutton" mode="aspectFit" src="/images/定位.png" bindtap="getCurrentLocation" >
+</cover-image>
+
+    <view class="list" >
+      <view class="site"><text style="color:#506c9b">共有3个</text></view>
+      <scroll-view   class="list-scroll" scroll-y="true" scroll-into-view="{{toScroll}}">
+        <block wx:for="{{canyin}}"  wx:for-item="item3" wx:for-index="index3" wx:key="true">
+        <view class="list-item" data-index3="{{index3}}" bindtap="canyinJumpPages"  id="item3{{index3}}">
+          <image  class="item-image" mode="aspectFit" src="{{item3.image}}"></image>
+        <text class="item-text">{{item3.text}}</text>
+        </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+
+<!--图书馆-->
+<view class="items" wx:if="{{currentTab==3}}">
+    <map  
+longitude="{{centerLongitude}}" latitude="{{centerLatitude}}" scale="15"
+markers="{{markers4}}" class="map" show-location style="width:100% height:150rpx" include-points="{{markers4}} " bindmarkertap="markertap"
+>
+</map>
+<cover-image class="coverbutton" mode="aspectFit" src="/images/定位.png" bindtap="getCurrentLocation" >
+</cover-image>
+
+    <view class="list" >
+      <view class="site"><text style="color:#506c9b">共有1个</text></view>
+      <scroll-view   class="list-scroll" scroll-y="true" scroll-into-view="{{toScroll}}">
+        <block wx:for="{{lib}}"  wx:for-item="item4" wx:for-index="index4" wx:key="true">
+        <view class="list-item" data-index4="{{index4}}" bindtap="libJumpPages"  id="item4{{index4}}">
+          <image  class="item-image" mode="aspectFit" src="{{item4.image}}"></image>
+        <text class="item-text">{{item4.text}}</text>
+        </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+
+
+<!--场馆-->
+<view class="items" wx:if="{{currentTab==4}}">
+    <map  
+longitude="{{centerLongitude}}" latitude="{{centerLatitude}}" scale="15"
+markers="{{markers5}}" class="map" show-location style="width:100% height:150rpx" include-points="{{markers5}}" bindmarkertap="markertap"
+>
+</map>
+<cover-image class="coverbutton" mode="aspectFit" src="/images/定位.png" bindtap="getCurrentLocation" >
+</cover-image>
+
+    <view class="list" >
+      <view class="site"><text style="color:#506c9b">共有2个</text></view>
+
+      <scroll-view   class="list-scroll" scroll-y="true" scroll-into-view="{{toScroll}}">
+        <block wx:for="{{gyms}}"  wx:for-item="item5" wx:for-index="index5" wx:key="true">
+        <view class="list-item" data-index5="{{index5}}" bindtap="gymsJumpTo" id="item5{{index5}}">
+          <image  class="item-image" mode="aspectFit" src="{{item5.image}}"></image>
+        <text class="item-text">{{item5.text}}</text>
+        </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+<!--出入门-->
+  <view class="items" wx:if="{{currentTab==5}}">
+    <map  
+longitude="{{centerLongitude}}" latitude="{{centerLatitude}}" scale="15"
+markers="{{markers6}}" class="map" show-location style="width:100% height:150rpx" include-points="{{markers6}} " bindmarkertap="markertap"
+>
+</map>
+<cover-image class="coverbutton" mode="aspectFit" src="/images/定位.png" bindtap="getCurrentLocation" >
+</cover-image>
+
+    <view class="list" >
+      <view class="site"><text style="color:#506c9b">共有5个</text></view>
+      <scroll-view   class="list-scroll" scroll-y="true" scroll-into-view="{{toScroll}}">
+        <block wx:for="{{gates}}"  wx:for-item="item6" wx:for-index="index6" wx:key="true">
+        <view class="list-item" data-index6="{{index6}}" bindtap="gatesJumpTo"  id="item6{{index6}}">
+          <image  class="item-image" mode="aspectFit" src="{{item6.image}}"></image>
+        <text class="item-text">{{item6.text}}</text>
+        </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+<!--ATM-->
+  <view class="items" wx:if="{{currentTab==6}}">
+    <map  
+longitude="{{centerLongitude}}" latitude="{{centerLatitude}}" scale="15"
+markers="{{markers7}}" class="map" show-location style="width:100% height:150rpx" include-points="{{markers8}}"
+>
+</map>
+<cover-image class="coverbutton" mode="aspectFit" src="/images/定位.png" bindtap="getCurrentLocation" >
+</cover-image>
+    <view class="list" >
+      <view class="site"><text style="color:#506c9b">共有1个</text></view>
+
+      <scroll-view   class="list-scroll" scroll-y="true">
+        <block wx:for="{{ATM}}"  wx:for-item="item7" wx:for-index="index7"  wx:key="true">
+        <view class="list-item" data-index7="{{index7}}" bindtap="ATMJumpTo">
+          <image  class="item-image" mode="aspectFit" src="{{item7.image}}"></image>
+        <text class="item-text">{{item7.text}}</text>
+        </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+<!--服务-->
+  <view class="items" wx:if="{{currentTab==7}}">
+    <map 
+longitude="{{centerLongitude}}" latitude="{{centerLatitude}}" scale="15"
+markers="{{markers8}}" class="map" show-location style="width:100% height:150rpx" include-points="{{markers8}}" bindmarkertap="markertap"
+>
+</map>
+<cover-image class="coverbutton" mode="aspectFit" src="/images/定位.png" bindtap="getCurrentLocation" >
+</cover-image>
+
+    <view class="list" >
+      <view class="site"><text style="color:#506c9b">共有3个</text></view>
+      <scroll-view   class="list-scroll" scroll-y="true" scroll-into-view="{{toScroll}}">
+        <block wx:for="{{service}}"  wx:for-item="item8" wx:for-index="index8" wx:key="true">
+        <view class="list-item" data-index8="{{index8}}" bindtap="serviceJumpTo" id="item8{{index8}}" >
+          <image  class="item-image" mode="aspectFit" src="{{item8.image}}"></image>
+        <text class="item-text">{{item8.text}}</text>
+        </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+</view>
+

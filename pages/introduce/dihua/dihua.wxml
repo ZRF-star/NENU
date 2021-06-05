@@ -1,0 +1,34 @@
+<!--pages/Y/y.wxml-->
+<view style="width:100%;height:1200rpx;">
+<!--滑动的图片-->
+<swiper indicator-color="rgb(255,255,255,0.5)"  indicator-active-color="rgb(255,255,255)" autoplay="true" interval="5000" duration="500" style="height：200rpx">
+  <block wx:for="{{swiperImg}}" wx:key="swiper{{index}}">
+     <swiper-item>
+        <image src="{{item.src}}" class="slide-image"></image>
+     </swiper-item>
+  </block>
+</swiper>
+
+
+
+<view class="hr"></view>
+
+<view class="nenu">地华公寓</view>
+
+<view class="hr"></view>
+
+<view class="enenu">Yue Hua Apartment</view>
+
+<view class="hr"></view>
+
+
+
+
+
+<view class="text"><text  class="content">地华公寓      120           84536376
+
+
+</text></view>
+</view>
+<!--pages/introduce/dihua/dihua.wxml-->
+<text>pages/introduce/dihua/dihua.wxml</text>

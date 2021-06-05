@@ -1,0 +1,32 @@
+<!--pages/art/art.wxml-->
+<view style="width:100%;height:1200rpx;">
+<!--滑动的图片-->
+<swiper indicator-color="rgb(255,255,255,0.5)"  indicator-active-color="rgb(255,255,255)" autoplay="true" interval="5000" duration="500" style="height：200rpx">
+  <block wx:for="{{swiperImg}}" wx:key="swiper{{index}}">
+     <swiper-item>
+        <image src="{{item.src}}" class="slide-image"></image>
+     </swiper-item>
+  </block>
+</swiper>
+
+
+
+<view class="hr"></view>
+
+<view class="nenu">美术学院</view>
+
+<view class="hr"></view>
+
+<view class="enenu">College Of Fine Arts</view>
+
+<view class="hr"></view>
+
+
+
+
+<view class="text"><text  class="content">东北师范大学美术学院坐落于吉林省长春市净月潭风景区。原为东北师范大学美术系，2001年撤系建院。东北师范大学美术系始建于1946年，1973年学校重建艺术系，设美术专业。1985年正式建立美术系。历经60余年的发展历史，美术学院从单一的一个专业、一个系，发展到今天具有9个系、20个专业方向、在国内有一定影响的美术学院。
+
+
+
+</text></view>
+</view>

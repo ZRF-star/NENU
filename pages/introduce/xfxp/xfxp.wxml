@@ -1,0 +1,16 @@
+<!--pages/introduce/xfxp/xfxp.wxml-->
+<view style="width:100%;height:1200rpx;">
+<!--滑动的图片-->
+<swiper indicator-dots="true" indicator-color="rgb(255,255,255,0.5)"  indicator-active-color="rgb(255,255,255)" autoplay="true" interval="5000" duration="500" style="height：200rpx">
+  <block wx:for="{{swiperImg}}" wx:key="swiper{{index}}">
+     <swiper-item>
+        <image src="{{item.src}}" class="slide-image"></image>
+     </swiper-item>
+  </block>
+</swiper>
+<view class="nenu">幸福小铺</view>
+<view class="enenu">Happiness shop</view>
+<view class="text"><text  class="content">  
+位于浴池旁边，有零食店、洗发店、洗衣店等等。
+</text></view>
+</view>

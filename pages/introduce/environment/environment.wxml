@@ -1,0 +1,32 @@
+<!--pages/environment/environment.wxml-->
+<view style="width:100%;height:1200rpx;">
+<!--滑动的图片-->
+<swiper indicator-color="rgb(255,255,255,0.5)"  indicator-active-color="rgb(255,255,255)" autoplay="true" interval="5000" duration="500" style="height：200rpx">
+  <block wx:for="{{swiperImg}}" wx:key="swiper{{index}}">
+     <swiper-item>
+        <image src="{{item.src}}" class="slide-image"></image>
+     </swiper-item>
+  </block>
+</swiper>
+
+
+
+<view class="hr"></view>
+
+<view class="nenu">环境学院</view>
+
+<view class="hr"></view>
+
+<view class="enenu">College Of The Environment</view>
+
+<view class="hr"></view>
+
+
+
+
+<view class="text"><text  class="content">东北师范大学环境学院成立于2013年，其前身为城市与环境科学学院环境科学系。环境科学系（1986年）是在东北师范大学环境科学研究所（1978年）基础上建立的，是我国高校中最早创办的培养从事环境科学研究、教学和环境保护人才的基地之一。　　
+环境学院现设有环境科学系、生态学系、环境工程系，包括环境科学、生态学、环境工程三个专业。拥有国家环境保护湿地生态与植被修复重点实验室、植被生态科学教育部重点实验室、吉林省动物资源保护与利用重点实验室、吉林省生态安全预警中心等多个国家、省部级科研平台，并在龙湾国家级自然保护区、长岭等全国各地建立多个野外实验站。
+
+
+</text></view>
+</view>

@@ -1,0 +1,31 @@
+<!--pages/foreign/foreign.wxml-->
+<view style="width:100%;height:1200rpx;">
+<!--滑动的图片-->
+<swiper indicator-color="rgb(255,255,255,0.5)"  indicator-active-color="rgb(255,255,255)" autoplay="true" interval="5000" duration="500" style="height：200rpx">
+  <block wx:for="{{swiperImg}}" wx:key="swiper{{index}}">
+     <swiper-item>
+        <image src="{{item.src}}" class="slide-image"></image>
+     </swiper-item>
+  </block>
+</swiper>
+
+
+
+<view class="hr"></view>
+
+<view class="nenu">外国语学院</view>
+
+<view class="hr"></view>
+
+<view class="enenu">Institute Of Foreign Languages</view>
+
+<view class="hr"></view>
+
+
+
+
+<view class="text"><text  class="content">  东北师范大学外国语学院前身为外国语言文学系，创建于1950年，1996年撤系建院。下设英语、俄语、日语、大学外语、对外商务（在东北师范大学净月校区）5个系。
+学院现有教授21人，副教授39人,有博士生导师6人，外籍专家8人。英语语言文学、日语语言文学2个学科有博士学位授予权，英语语言文学、俄语语言文学、日语语言文学、外国语言学及应用语言学、课程与教学论等5个学科有硕士学位授予权。
+
+</text></view>
+</view>

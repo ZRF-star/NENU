@@ -1,0 +1,32 @@
+<view style="width:100%;height:1200rpx;">
+<!--滑动的图片-->
+<swiper indicator-color="rgb(255,255,255,0.5)"  indicator-active-color="rgb(255,255,255)" autoplay="true" interval="5000" duration="500" style="height：200rpx">
+  <block wx:for="{{swiperImg}}" wx:key="swiper{{index}}">
+     <swiper-item>
+        <image src="{{item.src}}" class="slide-image"></image>
+     </swiper-item>
+  </block>
+</swiper>
+
+
+
+<view class="hr"></view>
+
+<view class="nenu">政法学院</view>
+
+<view class="hr"></view>
+
+<view class="enenu">Institute Of Political Science And Law</view>
+
+<view class="hr"></view>
+
+
+
+
+<view class="text"><text  class="content">政法学院的前身是东北大学社会科学院的政治经济系。1948年诞生在人民解放战争正在向全国挺进的特殊时期，是学校最早成立的教学院系之一。
+
+1950年学校更名为东北师范大学后，政治经济系更名为政治系，由学校直接领导。1955年为适应国家基础教育事业发展的需要，在原政治系的基础上组建了以培养政治课教师为主的政治教育系。1986年，为适应经济建设的需要，学校决定，以政治教育系的经济学教研室为基础，单独成立了经济管理系，即现在的东北师大经济学院和商学院。1994年我系增设法学本科专业以后，1998年原政治教育系更名为政法学院。2013年，学校进行学科和专业调整，将我院原哲学系、社会学系、马克思主义中国化二级学科、思想政治教育专业（非师范类）并入马克思主义学院（现马克思主义学部）。
+
+学院下设思想政治教育系、法学系、政治学系和行政管理系，有国家基础教育改革发展研究中心、中国地方政府治理现代化研究中心、当代马克思主义研究中心、廉政研究中心、教师教育研究中心、农村发展研究中心、冷战与当代国际关系研究中心、地方立法研究中心、毛泽东思想研究所、社会学研究所等研究机构，其中，中国地方政府治理现代化研究中心为省级人文社会科学重点研究基地。
+</text></view>
+</view>

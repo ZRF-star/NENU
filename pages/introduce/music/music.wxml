@@ -1,0 +1,29 @@
+<!--pages/music/music.wxml-->
+<view style="width:100%;height:1200rpx;">
+<!--滑动的图片-->
+<swiper indicator-color="rgb(255,255,255,0.5)"  indicator-active-color="rgb(255,255,255)" autoplay="true" interval="5000" duration="500" style="height：200rpx">
+  <block wx:for="{{swiperImg}}" wx:key="swiper{{index}}">
+     <swiper-item>
+        <image src="{{item.src}}" class="slide-image"></image>
+     </swiper-item>
+  </block>
+</swiper>
+
+
+
+<view class="hr"></view>
+
+<view class="nenu">音乐学院</view>
+
+<view class="hr"></view>
+
+<view class="enenu">Conservatory Of Music</view>
+
+<view class="hr"></view>
+
+
+
+
+<view class="text"><text  class="content">东北师范大学音乐学院创建于1946年，前身为东北大学鲁迅文艺学院音乐系。学院具有一流的办学条件和教学环境，总建筑面积为1.59万平方米。学院根据社会需求调整人才培养目标，大力推进实践教学，人才培养质量不断提高。坚持开放性办学，注重培养学生的创新精神和实践能力，并多次参与国内外大型比赛中，共获国际级奖8项、国家级奖66项、省部级奖55项。
+</text></view>
+</view>

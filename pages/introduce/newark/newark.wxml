@@ -1,0 +1,31 @@
+<!--pages/newark/nemwark.wxml-->
+<view style="width:100%;height:1200rpx;">
+<!--滑动的图片-->
+<swiper indicator-color="rgb(255,255,255,0.5)"  indicator-active-color="rgb(255,255,255)" autoplay="true" interval="5000" duration="500" style="height：200rpx">
+  <block wx:for="{{swiperImg}}" wx:key="swiper{{index}}">
+     <swiper-item>
+        <image src="{{item.src}}" class="slide-image"></image>
+     </swiper-item>
+  </block>
+</swiper>
+
+
+
+<view class="hr"></view>
+
+<view class="nenu">罗格斯大学纽瓦克学院</view>
+
+<view class="hr"></view>
+
+<view class="enenu">Rutgers University, Newark College</view>
+
+<view class="hr"></view>
+
+
+
+
+<view class="text"><text  class="content">东北师范大学罗格斯大学纽瓦克学院，是经国家教育部正式批准，由东北师范大学与美国罗格斯新泽西州立大学合作设立的中外合作办学机构，隶属于东北师范大学24个学院之一。
+
+罗格斯新泽西州立大学（简称“罗格斯大学”）紧邻纽约，是美国最负盛名的公立研究型大学之一。2015年在《美国新闻与世界报道》全球500所大学排行榜上，罗格斯大学位列第55位。东北师范大学罗格斯大学纽瓦克学院培养具有国际视野、通晓国际规则、能够参与国际事务和国际竞争的国际化高端管理人才。学院下设三个专业：物流管理（供应链管理）、金融、公共事业管理（公共与非盈利管理）；教师队伍由外中籍教师组成，外籍教师为主中国教师为辅，核心课程及专业课程实行双教师授课制，以外籍教师为主讲，辅以课程助理教师。专业课外籍教师均来自美国罗格斯大学商学院和公共事务与管理学院。罗格斯大学商学院享有很高的国际声望，2015年《美国新闻与世界报道》排名全美第48位；罗格斯大学公共事务与管理学院2015年《美国新闻与世界报道》排名全美第23位；所开设的三个专业均在美国同类专业中排名位居前列。罗格斯大学纽瓦克学院践行“植根于东师，立足于世界”的办学理念，采用国际最先进的教学模式和管理模式，通过东北师范大学与罗格斯大学的通力合作，彰显其自身优势和特色，成为培养国际化、高水平、创新型人才的摇篮。
+</text></view>
+</view>

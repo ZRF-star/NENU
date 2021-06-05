@@ -1,0 +1,167 @@
+.nav {
+    height: 70rpx;
+    width: 600rpx;
+    line-height: 60rpx;
+    background:#506c9b;
+    font-size: 25rpx;
+    white-space:nowrap;
+    top: 0;
+    left: 150rpx;
+    z-index: 99;
+    position: fixed;
+    color: white;
+    
+}
+.nav-item {
+    width: 90rpx;
+    display: inline-block;
+    text-align: center;
+
+}
+.nav-item.active{
+    color: white;
+    border-bottom: 4rpx solid white;
+}
+.xiaoqu{
+  background: #506c9b;
+}
+
+.no{
+  margin-left:4rpx;
+}
+
+.page{
+  height:100%;
+  width:100%;
+}
+
+#map{
+  width:750rpx; 
+  height:630rpx;
+
+}
+.mapcon{
+   height: 100%;
+  display: flex;
+}
+.site{
+    height: 70rpx;
+    width: 750rpx;
+    line-height: 60rpx;
+    background:white;
+    font-size: 30rpx;
+    top: 630rpx;
+    left: 0rpx;
+    z-index: 99;
+    position: fixed;
+    color: #506c9b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-width:thin;
+  border-bottom-color:lightgray;
+  border-bottom-style: ridge;
+}
+.landmark{
+    width: 750rpx;
+    height:500rpx; 
+    line-height: 60rpx;
+    background:white;
+    font-size: 30rpx;
+    top: 700rpx;
+    left: 0rpx;
+    z-index: 98;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.spotslist{
+  width: 750rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom-width:thin;
+  border-bottom-color:lightgray;
+  border-bottom-style: ridge;
+  z-index: 99;
+    
+}
+.photo{
+width: 260rpx;
+height: 180rpx;
+display: inline-block;
+overflow: hidden;
+margin-top: 10rpx;
+z-index: 99;
+}
+.name
+{
+  height: 70rpx;
+    width: 500rpx;
+    font-size: 30rpx;
+    color: black;
+    margin-left: 20rpx;
+    z-index: 99;
+}
+.items{
+  height:94%;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  bottom: 0rpx;
+}
+.map{
+  height:50%;
+  width:100%;
+  position: fixed;
+}
+.list{
+  height:45%;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+
+}
+
+.list-scroll{
+  height:39%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+}
+.list-item{
+margin:20rpx;
+display: flex;
+flex-direction: row;
+border-bottom: 2rpx solid lightgray;
+align-items: center;
+
+}
+.item-image{
+  height:180rpx;
+  z-index: 3;
+  width:240rpx;
+  left:0;
+  margin-bottom: 20rpx;
+}
+.item-text{
+font-size: 30rpx;
+margin-left: 40rpx;
+}
+.coverbutton{
+  top:46%;
+  right:20rpx;
+  height:70rpx;
+  width:70rpx;
+  position:fixed; 
+}
